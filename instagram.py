@@ -60,4 +60,6 @@ class Instagram:
             sleep(2)
             self.__driver.find_element_by_xpath(self.__btnPostComment).click()
             print(f'Comentario de numero {i+1} => {choiceusersNamePost}')
+            sleep(8)
+            self.__driver.refresh()
             sleep(60+randrange(0, 9))
