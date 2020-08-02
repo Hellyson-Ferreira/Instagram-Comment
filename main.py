@@ -2,23 +2,28 @@ from instagram import Instagram
 from selenium import webdriver
 from time import sleep
 
-
-URL = "https://www.instagram.com/p/CCpHERaFpm6/"
-USERNAME = "XXXXXXXXXXXX"
-PASSWORD = "xxxxxxxxxxxxxxxxx"
+#886
+URL = "https://www.instagram.com/p/CDML-F1h_ib/"
+USERNAME = "XXXXXXX"
+PASSWORD = "XXXXXXXXXXX"
 COMMENT_NUMBER = 1000
-
 COMMENT_LIST = [
+    '@adriel.victrre',
     '@felipeanders.on__',
-    '@ciellen_santos',
-    '@francinete.franca.16',
-    '@francianesantos1607',
-    '@magda_36.1',
-    '@ytaciria',
-    '@antoniaantoniabrandao',
-
+    '@franferreira1023',
+    '@joao.vvi',
+    '@__hellysonferreira__',
+    '@ray_santtory',
+    '@livia_magalhaesbkl',
+    '@ayslanguima',
+    '@basilioelcio',
+    '@felipeanderson__',
+    '@luaneisabele82',
+    '@joseemanuelsame',
+    '@joseemanuel778',
 ]
-USER_NUMBER_PER_COMMENT = 2
+
+USER_NUMBER_PER_COMMENT = 1
 
 DRIVER = webdriver.Chrome()
 
