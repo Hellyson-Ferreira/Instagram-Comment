@@ -3,7 +3,7 @@ from selenium import webdriver
 from time import sleep
 
 #886
-URL = "https://www.instagram.com/p/CDML-F1h_ib/"
+URL_POST = "https://www.instagram.com/p/CDML-F1h_ib/"
 USERNAME = "XXXXXXX"
 PASSWORD = "XXXXXXXXXXX"
 COMMENT_NUMBER = 1000
@@ -27,7 +27,7 @@ USER_NUMBER_PER_COMMENT = 1
 
 DRIVER = webdriver.Chrome()
 
-instagram = Instagram(DRIVER, URL)
+instagram = Instagram(DRIVER,URL_POST)
 instagram.navigate()
 instagram.login(USERNAME, PASSWORD)
 instagram.comment(COMMENT_LIST, USER_NUMBER_PER_COMMENT, COMMENT_NUMBER)
