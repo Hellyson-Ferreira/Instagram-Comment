@@ -26,6 +26,7 @@ class Instagram:
         sleep(2)
 
     def login(self, user_name, password):
+        
         print("Login Intagram")
         self.__driver.find_element_by_name(
             self.__input_user_name).send_keys(user_name)
@@ -41,14 +42,14 @@ class Instagram:
         comments = []
         while len(comments) < user_number_per_comment:
             commnet = choice(comments_list)
-            comments.append(commnet)
+            comments.append(f'@{commnet}'.strip())
             comments_list.remove(commnet)
         return comments
 
     def comment(self, comments_list, user_number_per_comment, comment_number=1):
-
         print("Comment")
         comments_list_copy = comments_list [:]
+
         for i in range(comment_number):
 
             if len(comments_list_copy) == 0:
