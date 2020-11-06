@@ -1,4 +1,4 @@
 # Instagram-Comment
  
-Bot para automatizar comentários no instagram
+Bot para automatizar comentários em sorteios no instagram
 <hr>
