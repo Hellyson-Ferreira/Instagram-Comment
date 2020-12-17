@@ -14,7 +14,7 @@ class Instagram:
         self.__input_user_name = 'username'  # name
         self.__input_user_password = 'password'  # name
         # xPath
-        self.__btn_login = '//*[@id="react-root"]/section/main/article/div[2]/div[1]/div/form/div[4]/button'
+        self.__btn_login = '//*[@id="loginForm"]/div/div[3]/button'
 
         # Elements of the intagram post page #xPath
 
@@ -34,8 +34,10 @@ class Instagram:
             self.__input_user_password).send_keys(password)
         self.__driver.find_element_by_xpath(self.__btn_login).click()
         sleep(2)
+    
+    def navigate_to_post(self):
         self.__driver.get(self.__url_intagram_post)
-        sleep(4)
+        sleep(2)
 
     def __choice_users_name_post(self, comments_list, user_number_per_comment):
         comments_list = comments_list
@@ -54,7 +56,6 @@ class Instagram:
 
             if len(comments_list_copy) == 0:
                 comments_list_copy = comments_list[:]
-            index = 0
             choiceusers_name_post = self.__choice_users_name_post(
                 comments_list_copy, user_number_per_comment)
             self.__driver.find_element_by_class_name(
