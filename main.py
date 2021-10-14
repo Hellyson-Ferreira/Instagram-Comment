@@ -3,7 +3,6 @@ from selenium import webdriver
 from time import sleep
 from comment_list import COMMENT_LIST
 
-#219 + 
 URL = "https://www.instagram.com/p/CCZfJc9jbFz/"
 USERNAME = "gabrielnascimento1514"
 PASSWORD = "XXXXXXXXXXXXX"
